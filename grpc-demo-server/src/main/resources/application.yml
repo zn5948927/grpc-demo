@@ -1,0 +1,58 @@
+#net.devh.boot.grpc.server.config.GrpcServerProperties
+grpc:
+   server:
+      port: 9091
+      in-process-name: grpc-demo-server
+   client:
+      #允许客户端在同一应用程序内使用以下配置连接到服务器
+      inProcess:
+         address: in-process:grpc-demo-server
+#      userDemoClient:
+#         #禁用传输层安全(https://yidongnan.github.io/grpc-spring-boot-starter/zh-CN/client/security.html)
+#         negotiationType: PLAINTEXT
+#         #grpc服务地址配置(https://yidongnan.github.io/grpc-spring-boot-starter/zh-CN/client/configuration.html#configuration-via-properties)
+#         address: static://localhost:9090
+
+spring:
+   profiles:
+      active: dev
+   application:
+      name: grpc-demo-server
+   datasource:
+      name: dev
+      url: jdbc:mysql://172.17.0.70:3306/sharding2021?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: Be429LPPjo40PmcC
+      druid:
+         driver-class-name: com.mysql.jdbc.Driver
+         initial-size: 1
+         max-active: 20
+         min-idle: 1
+         max-wait: 60000
+         pool-prepared-statements: false
+         validation-query: select 'x'
+         test-on-borrow: false
+         test-on-return: false
+         test-while-idle: true
+         time-between-eviction-runs-millis: 60000
+         min-evictable-idle-time-millis: 300000
+        
+#mybatis-plus.type-handlers-package: com.hushow.demo.mybatis.handlers
+#mybatis-plus.type-enums-package: com.hushow.demo.enums
+
+logging:
+   level:
+      root: INFO
+      org.hibernate: INFO
+      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+      org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+      com.springms: DEBUG
+      org.springframework.transaction: TRACE
+      org.springframework.jdbc.datasource: TRACE
+      org.mybatis.spring.SqlSessionUtils: TRACE
+      org.mybatis.spring.transaction: TRACE
+      org.springframework.scheduling: INFO
+      org.springframework: INFO
+      com.hushow: DEBUG
+      org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: TRACE
+      org.springframework.boot.context.config.ConfigFileApplicationListener: TRACE

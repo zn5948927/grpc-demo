@@ -1,0 +1,202 @@
+2021-01-22 10:20:49.798 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - Starting GrpcDemoClientApplication on zuoningdeMacBook-Pro.local with PID 4963 (/Users/zuoning/IdeaProjects/grpc-demo/grpc-demo-client/target/classes started by zuoning in /Users/zuoning/IdeaProjects/grpc-demo)
+2021-01-22 10:20:49.810 [main] DEBUG com.hushow.demo.grpc.GrpcDemoClientApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-22 10:20:49.811 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - The following profiles are active: dev
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-22 10:20:49.915 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-22 10:20:49.916 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Activated activeProfiles dev
+2021-01-22 10:20:49.916 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Loaded config file 'file:/Users/zuoning/IdeaProjects/grpc-demo/grpc-demo-client/target/classes/application.yml' (classpath:/application.yml)
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml) for profile dev
+2021-01-22 10:20:49.916 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-22 10:20:49.917 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml) for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties for profile dev
+2021-01-22 10:20:49.918 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml for profile dev
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-22 10:20:49.919 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-22 10:20:49.920 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-22 10:20:50.930 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-01-22 10:20:50.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-01-22 10:20:50.943 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-22 10:20:50.943 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-22 10:20:51.040 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-22 10:20:51.040 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1119 ms
+2021-01-22 10:20:51.155 [main] INFO  n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2021-01-22 10:20:51.441 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-22 10:20:51.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-01-22 10:20:51.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-01-22 10:20:51.774 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - Started GrpcDemoClientApplication in 2.743 seconds (JVM running for 3.917)
+2021-01-22 10:21:06.296 [main] INFO  com.hushow.demo.grpc.GrpcApplication - Starting GrpcApplication on zuoningdeMacBook-Pro.local with PID 4966 (/Users/zuoning/IdeaProjects/grpc-demo/grpc-demo-server/target/classes started by zuoning in /Users/zuoning/IdeaProjects/grpc-demo)
+2021-01-22 10:21:06.299 [main] DEBUG com.hushow.demo.grpc.GrpcApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-22 10:21:06.299 [main] INFO  com.hushow.demo.grpc.GrpcApplication - The following profiles are active: dev
+2021-01-22 10:21:06.337 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-22 10:21:06.337 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-22 10:21:06.338 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Activated activeProfiles dev
+2021-01-22 10:21:06.338 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Loaded config file 'file:/Users/zuoning/IdeaProjects/grpc-demo/grpc-demo-server/target/classes/application.yml' (classpath:/application.yml)
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-22 10:21:06.338 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml) for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-22 10:21:06.339 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml for profile dev
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-22 10:21:06.340 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-22 10:21:06.341 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-22 10:21:06.341 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-22 10:21:06.341 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-22 10:21:06.341 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-22 10:21:07.096 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-01-22 10:21:07.890 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-22 10:21:08.198 [main] INFO  n.d.b.g.s.a.GrpcServerFactoryAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2021-01-22 10:21:08.229 [main] INFO  n.d.b.g.s.a.GrpcServerFactoryAutoConfiguration - 'grpc.server.in-process-name' is set: Creating InProcessGrpcServerFactory
+2021-01-22 10:21:08.427 [main] INFO  n.d.b.g.s.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: com.hushow.demo.grpc.user.dto.User, bean: userServiceGrpcImpl, class: com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl
+2021-01-22 10:21:08.551 [main] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: *, port: 9091
+2021-01-22 10:21:08.551 [main] INFO  n.d.b.g.s.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: com.hushow.demo.grpc.user.dto.User, bean: userServiceGrpcImpl, class: com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl
+2021-01-22 10:21:08.553 [main] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: in-process:grpc-demo-server, port: -1
+2021-01-22 10:21:08.563 [main] INFO  com.hushow.demo.grpc.GrpcApplication - Started GrpcApplication in 2.889 seconds (JVM running for 4.294)
+2021-01-22 10:23:29.320 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-22 10:23:29.320 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-22 10:23:29.328 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-01-22 10:23:29.357 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [World]
+2021-01-22 10:23:29.358 [http-nio-8082-exec-1] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-22 10:23:29.762 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-22 10:23:29.768 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@312c0f00] was not registered for synchronization because synchronization is not active
+2021-01-22 10:23:29.801 [grpc-default-executor-0] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-22 10:23:29.827 [grpc-default-executor-0] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4dc22232] will not be managed by Spring
+2021-01-22 10:23:29.832 [grpc-default-executor-0] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.selectList - ==>  Preparing: SELECT id,name,address,age FROM user_demo 
+2021-01-22 10:23:29.869 [grpc-default-executor-0] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.selectList - ==> Parameters: 
+2021-01-22 10:23:29.912 [grpc-default-executor-0] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.selectList - <==      Total: 2
+2021-01-22 10:23:29.914 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@312c0f00]
+2021-01-22 10:23:29.987 [http-nio-8082-exec-1] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - testAdd结果:[{"Id":1,"Name":"张三","Age":25,"Address":"长沙"},{"Id":2,"Name":"李四","Age":31,"Address":"北京市"}]
+2021-01-22 10:35:25.499 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-22 10:35:25.535 [SpringContextShutdownHook] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC server shutdown.
+2021-01-22 10:35:25.537 [SpringContextShutdownHook] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC server shutdown.
+2021-01-22 10:35:25.544 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

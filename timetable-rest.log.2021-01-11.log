@@ -1,0 +1,783 @@
+2021-01-11 15:22:10.419 [main] INFO  com.hushow.demo.grpc.GrpcApplication - Starting GrpcApplication on XinyuandeMacBook-Pro.local with PID 23525 (/Users/xinyuanzhou/Downloads/learning-demo/grpc-demo/grpc-demo-server/target/classes started by xinyuanzhou in /Users/xinyuanzhou/Downloads/learning-demo/grpc-demo)
+2021-01-11 15:22:10.422 [main] DEBUG com.hushow.demo.grpc.GrpcApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-11 15:22:10.422 [main] INFO  com.hushow.demo.grpc.GrpcApplication - The following profiles are active: dev
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-11 15:22:10.462 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Activated activeProfiles dev
+2021-01-11 15:22:10.462 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Loaded config file 'file:/Users/xinyuanzhou/Downloads/learning-demo/grpc-demo/grpc-demo-server/target/classes/application.yml' (classpath:/application.yml)
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-11 15:22:10.462 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml) for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-11 15:22:10.463 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml for profile dev
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-11 15:22:10.464 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-11 15:22:10.465 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-11 15:22:10.465 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-11 15:22:11.189 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-01-11 15:22:11.901 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-11 15:22:12.157 [main] INFO  n.d.b.g.s.a.GrpcServerFactoryAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2021-01-11 15:22:12.188 [main] INFO  n.d.b.g.s.a.GrpcServerFactoryAutoConfiguration - 'grpc.server.in-process-name' is set: Creating InProcessGrpcServerFactory
+2021-01-11 15:22:12.436 [main] INFO  n.d.b.g.s.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: com.hushow.demo.grpc.user.dto.User, bean: userServiceGrpcImpl, class: com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl
+2021-01-11 15:22:12.573 [main] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: *, port: 9091
+2021-01-11 15:22:12.573 [main] INFO  n.d.b.g.s.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: com.hushow.demo.grpc.user.dto.User, bean: userServiceGrpcImpl, class: com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl
+2021-01-11 15:22:12.575 [main] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: in-process:grpc-demo-server, port: -1
+2021-01-11 15:22:12.584 [main] INFO  com.hushow.demo.grpc.GrpcApplication - Started GrpcApplication in 2.661 seconds (JVM running for 3.787)
+2021-01-11 15:22:27.333 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - Starting GrpcDemoClientApplication on XinyuandeMacBook-Pro.local with PID 23528 (/Users/xinyuanzhou/Downloads/learning-demo/grpc-demo/grpc-demo-client/target/classes started by xinyuanzhou in /Users/xinyuanzhou/Downloads/learning-demo/grpc-demo)
+2021-01-11 15:22:27.335 [main] DEBUG com.hushow.demo.grpc.GrpcDemoClientApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-11 15:22:27.336 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - The following profiles are active: dev
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-11 15:22:27.380 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-11 15:22:27.381 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Activated activeProfiles dev
+2021-01-11 15:22:27.381 [main] DEBUG o.s.b.context.config.ConfigFileApplicationListener - Loaded config file 'file:/Users/xinyuanzhou/Downloads/learning-demo/grpc-demo/grpc-demo-client/target/classes/application.yml' (classpath:/application.yml)
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.properties' (file:./config/application-dev.properties) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.xml' (file:./config/application-dev.xml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yml' (file:./config/application-dev.yml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application-dev.yaml' (file:./config/application-dev.yaml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-11 15:22:27.381 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.properties' (file:./application-dev.properties) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.xml' (file:./application-dev.xml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yml' (file:./application-dev.yml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application-dev.yaml' (file:./application-dev.yaml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml) for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.xml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application-dev.yaml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-11 15:22:27.382 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.xml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application-dev.yaml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml for profile dev
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.properties' (file:./config/application.properties)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.xml' (file:./config/application.xml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yml' (file:./config/application.yml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./config/application.yaml' (file:./config/application.yaml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.properties' (file:./application.properties)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.xml' (file:./application.xml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yml' (file:./application.yml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config 'file:./application.yaml' (file:./application.yaml)
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.properties
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.xml
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yml
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/config/application.yaml
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.properties
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.xml
+2021-01-11 15:22:27.383 [main] TRACE o.s.b.context.config.ConfigFileApplicationListener - Skipped missing config classpath:/application.yaml
+2021-01-11 15:22:28.308 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-01-11 15:22:28.320 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-01-11 15:22:28.320 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-11 15:22:28.321 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-11 15:22:28.404 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-11 15:22:28.405 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1021 ms
+2021-01-11 15:22:28.488 [main] INFO  n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2021-01-11 15:22:28.767 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-11 15:22:28.931 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-01-11 15:22:28.962 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-01-11 15:22:28.966 [main] INFO  com.hushow.demo.grpc.GrpcDemoClientApplication - Started GrpcDemoClientApplication in 2.236 seconds (JVM running for 2.912)
+2021-01-11 15:23:09.219 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 15:23:09.219 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-11 15:23:09.227 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-01-11 15:23:09.261 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [zhangsan]
+2021-01-11 15:23:09.261 [http-nio-8082-exec-1] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-11 15:23:09.764 [grpc-default-executor-0] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - start add
+2021-01-11 15:23:09.771 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-11 15:23:09.775 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5df47da7] was not registered for synchronization because synchronization is not active
+2021-01-11 15:23:09.793 [grpc-default-executor-0] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:23:09.795 [grpc-default-executor-0] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71998b3c] will not be managed by Spring
+2021-01-11 15:23:09.798 [grpc-default-executor-0] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==>  Preparing: INSERT INTO user_demo ( name, address, age ) VALUES ( ?, ?, ? ) 
+2021-01-11 15:23:09.821 [grpc-default-executor-0] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==> Parameters: 啊虎1(String), 长沙(String), 28(Integer)
+2021-01-11 15:23:09.896 [grpc-default-executor-0] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5df47da7]
+2021-01-11 15:23:09.939 [grpc-default-executor-0] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:23:09.945 [grpc-default-executor-0] ERROR io.grpc.internal.SerializingExecutor - Exception while executing runnable io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed@6cb4db38
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+### The error may exist in com/hushow/demo/grpc/dao/mapper/UserDemoMapper.java (best guess)
+### The error may involve com.hushow.demo.grpc.dao.mapper.UserDemoMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user_demo  ( name, address, age )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy51.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy52.insert(Unknown Source)
+	at com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl.add(UserServiceGrpcImpl.java:48)
+	at com.hushow.demo.grpc.user.service.UserGrpc$MethodHandlers.invoke(UserGrpc.java:379)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:180)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:331)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:814)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy66.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 19 common frames omitted
+2021-01-11 15:23:09.958 [http-nio-8082-exec-1] ERROR com.hushow.demo.grpc.controller.GrpcDemoController - RPC failed: UNKNOWN
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:23:09.966 [http-nio-8082-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.grpc.StatusRuntimeException: UNKNOWN] with root cause
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:23:09.978 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [org.apache.catalina.core.ApplicationHttpRequest@3d1db9f0]
+2021-01-11 15:28:08.957 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [zhangsan]
+2021-01-11 15:28:08.957 [http-nio-8082-exec-2] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-11 15:28:08.960 [grpc-default-executor-1] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - start add
+2021-01-11 15:28:08.960 [grpc-default-executor-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-11 15:28:08.960 [grpc-default-executor-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15a5f99a] was not registered for synchronization because synchronization is not active
+2021-01-11 15:28:08.961 [grpc-default-executor-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:28:09.013 [grpc-default-executor-1] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71998b3c] will not be managed by Spring
+2021-01-11 15:28:09.013 [grpc-default-executor-1] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==>  Preparing: INSERT INTO user_demo ( name, address, age ) VALUES ( ?, ?, ? ) 
+2021-01-11 15:28:09.014 [grpc-default-executor-1] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==> Parameters: 啊虎1(String), 长沙(String), 28(Integer)
+2021-01-11 15:28:09.040 [grpc-default-executor-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15a5f99a]
+2021-01-11 15:28:09.040 [grpc-default-executor-1] ERROR io.grpc.internal.SerializingExecutor - Exception while executing runnable io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed@600c549d
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+### The error may exist in com/hushow/demo/grpc/dao/mapper/UserDemoMapper.java (best guess)
+### The error may involve com.hushow.demo.grpc.dao.mapper.UserDemoMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user_demo  ( name, address, age )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy51.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy52.insert(Unknown Source)
+	at com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl.add(UserServiceGrpcImpl.java:48)
+	at com.hushow.demo.grpc.user.service.UserGrpc$MethodHandlers.invoke(UserGrpc.java:379)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:180)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:331)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:814)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy66.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 19 common frames omitted
+2021-01-11 15:28:09.041 [http-nio-8082-exec-2] ERROR com.hushow.demo.grpc.controller.GrpcDemoController - RPC failed: UNKNOWN
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:28:09.042 [http-nio-8082-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.grpc.StatusRuntimeException: UNKNOWN] with root cause
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:28:09.044 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [org.apache.catalina.core.ApplicationHttpRequest@3eddb9fc]
+2021-01-11 15:32:38.694 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [zhangsan]
+2021-01-11 15:32:38.695 [http-nio-8082-exec-3] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-11 15:32:38.698 [grpc-default-executor-2] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - start add
+2021-01-11 15:32:38.699 [grpc-default-executor-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-11 15:32:38.699 [grpc-default-executor-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6525c3d2] was not registered for synchronization because synchronization is not active
+2021-01-11 15:32:38.700 [grpc-default-executor-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:32:38.718 [grpc-default-executor-2] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71998b3c] will not be managed by Spring
+2021-01-11 15:32:38.718 [grpc-default-executor-2] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==>  Preparing: INSERT INTO user_demo ( name, address, age ) VALUES ( ?, ?, ? ) 
+2021-01-11 15:32:38.719 [grpc-default-executor-2] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==> Parameters: 啊虎1(String), 长沙(String), 28(Integer)
+2021-01-11 15:32:38.743 [grpc-default-executor-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6525c3d2]
+2021-01-11 15:32:38.744 [grpc-default-executor-2] ERROR io.grpc.internal.SerializingExecutor - Exception while executing runnable io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed@6be23106
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+### The error may exist in com/hushow/demo/grpc/dao/mapper/UserDemoMapper.java (best guess)
+### The error may involve com.hushow.demo.grpc.dao.mapper.UserDemoMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user_demo  ( name, address, age )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy51.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy52.insert(Unknown Source)
+	at com.hushow.demo.grpc.service.impl.UserServiceGrpcImpl.add(UserServiceGrpcImpl.java:48)
+	at com.hushow.demo.grpc.user.service.UserGrpc$MethodHandlers.invoke(UserGrpc.java:379)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:180)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:331)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:814)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Incorrect string value: '\xE5\x95\x8A\xE8\x99\x8E...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy66.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 19 common frames omitted
+2021-01-11 15:32:38.750 [http-nio-8082-exec-3] ERROR com.hushow.demo.grpc.controller.GrpcDemoController - RPC failed: UNKNOWN
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:32:38.751 [http-nio-8082-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.grpc.StatusRuntimeException: UNKNOWN] with root cause
+io.grpc.StatusRuntimeException: UNKNOWN
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at com.hushow.demo.grpc.user.service.UserGrpc$UserBlockingStub.add(UserGrpc.java:319)
+	at com.hushow.demo.grpc.controller.GrpcDemoController.helloGrpc(GrpcDemoController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-11 15:32:38.753 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [org.apache.catalina.core.ApplicationHttpRequest@1d3bcaaa, org.apache.catalina.connector.ResponseFacade@2d148fb5]
+2021-01-11 15:32:38.830 [http-nio-8082-exec-4] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [org.apache.catalina.core.ApplicationHttpRequest@149ff92f]
+2021-01-11 15:37:05.754 [http-nio-8082-exec-6] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [zhangsan]
+2021-01-11 15:37:05.756 [http-nio-8082-exec-6] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-11 15:37:05.763 [grpc-default-executor-3] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - start add
+2021-01-11 15:37:05.763 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-11 15:37:05.763 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d407eb] was not registered for synchronization because synchronization is not active
+2021-01-11 15:37:05.764 [grpc-default-executor-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:37:05.779 [grpc-default-executor-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71998b3c] will not be managed by Spring
+2021-01-11 15:37:05.780 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==>  Preparing: INSERT INTO user_demo ( name, address, age ) VALUES ( ?, ?, ? ) 
+2021-01-11 15:37:05.780 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==> Parameters: 啊虎1(String), 长沙(String), 28(Integer)
+2021-01-11 15:37:05.809 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - <==    Updates: 1
+2021-01-11 15:37:05.824 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d407eb]
+2021-01-11 15:37:05.834 [grpc-default-executor-3] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - end add
+2021-01-11 15:37:05.845 [http-nio-8082-exec-6] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - testAdd结果: 啊虎1
+2021-01-11 15:37:31.203 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [zhangsan]
+2021-01-11 15:37:31.203 [http-nio-8082-exec-7] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - 开始helloGrpc
+2021-01-11 15:37:31.207 [grpc-default-executor-3] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - start add
+2021-01-11 15:37:31.207 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2021-01-11 15:37:31.207 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dfa1de1] was not registered for synchronization because synchronization is not active
+2021-01-11 15:37:31.207 [grpc-default-executor-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2021-01-11 15:37:31.208 [grpc-default-executor-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71998b3c] will not be managed by Spring
+2021-01-11 15:37:31.208 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==>  Preparing: INSERT INTO user_demo ( name, address, age ) VALUES ( ?, ?, ? ) 
+2021-01-11 15:37:31.208 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - ==> Parameters: 啊虎1(String), 长沙(String), 28(Integer)
+2021-01-11 15:37:31.241 [grpc-default-executor-3] DEBUG c.h.demo.grpc.dao.mapper.UserDemoMapper.insert - <==    Updates: 1
+2021-01-11 15:37:31.243 [grpc-default-executor-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dfa1de1]
+2021-01-11 15:37:31.244 [grpc-default-executor-3] INFO  c.h.demo.grpc.service.impl.UserServiceGrpcImpl - end add
+2021-01-11 15:37:31.247 [http-nio-8082-exec-7] INFO  com.hushow.demo.grpc.controller.GrpcDemoController - testAdd结果: 啊虎1
+2021-01-11 18:51:12.830 [SpringContextShutdownHook] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC server shutdown.
+2021-01-11 18:51:12.831 [SpringContextShutdownHook] INFO  n.d.b.g.server.serverfactory.GrpcServerLifecycle - gRPC server shutdown.
+2021-01-11 18:51:12.840 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-01-11 18:51:12.867 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

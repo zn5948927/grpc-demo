@@ -1,0 +1,31 @@
+#net.devh.boot.grpc.server.config.GrpcServerProperties
+grpc:
+   client:
+      userDemoClient:
+         #禁用传输层安全(https://yidongnan.github.io/grpc-spring-boot-starter/zh-CN/client/security.html)
+         negotiationType: PLAINTEXT
+         #grpc服务地址配置(https://yidongnan.github.io/grpc-spring-boot-starter/zh-CN/client/configuration.html#configuration-via-properties)
+         address: static://localhost:9091
+server:
+   port: 8082
+spring:
+   profiles:
+      active: dev
+   application:
+      name: grcp-demo-client
+logging:
+   level:
+      root: INFO
+      org.hibernate: INFO
+      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+      org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+      com.springms: DEBUG
+      org.springframework.transaction: TRACE
+      org.springframework.jdbc.datasource: TRACE
+      org.mybatis.spring.SqlSessionUtils: TRACE
+      org.mybatis.spring.transaction: TRACE
+      org.springframework.scheduling: INFO
+      org.springframework: INFO
+      com.hushow: DEBUG
+      org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: TRACE
+      org.springframework.boot.context.config.ConfigFileApplicationListener: TRACE

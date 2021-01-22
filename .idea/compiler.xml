@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="grpc-demo-server" />
+        <module name="grpc-demo-client" />
+        <module name="grpc-demo-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="grpc-demo" target="8" />
+      <module name="grpc-demo-api" target="8" />
+      <module name="grpc-demo-client" target="8" />
+      <module name="grpc-demo-server" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="grpc-demo-api" options="-parameters" />
+      <module name="grpc-demo-client" options="-parameters" />
+      <module name="grpc-demo-server" options="-parameters" />
+    </option>
+  </component>
+</project>
